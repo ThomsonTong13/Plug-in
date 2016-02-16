@@ -10,4 +10,4 @@ iOS Pluggable development base on framework.
 
 设想，如果每一个功能点都是一个动态库，在用户想使用某个功能的时候让其从网络下载，然后手动加载动态库，实现功能的的插件化，就再也不用担心功能点的无限增多了，这该是件多么美好的事！
 
-## Getting started
+在这里我做了一个打包好的Demo.framework动态库，它可以是一个独立的功能，也可以是一个页面。这个framework可以从网上下载也可以内嵌到app里面，由于条件因素我选择了内嵌的方式。在程序一启动将该内嵌的framework复制到app的文件目录下，使用时传入这个功能模块的uri进行遍历，找到相应的controller来进行push。
